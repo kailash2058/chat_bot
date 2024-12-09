@@ -1,0 +1,14 @@
+# Ignore virtual environment folder
+bot_env/
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Cache files
+.DS_Store
+.mypy_cache/
+.pytest_cache/
+
+# Environment files
+.env
+
