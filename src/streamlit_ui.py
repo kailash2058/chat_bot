@@ -103,8 +103,7 @@ def main():
 
         if "May I know your" in response or "call me" in user_query.lower():
             book_appointment()
-        # else:
-        #     st.write(f"Bot: {response}")
+       
 
 
 if __name__ == "__main__":

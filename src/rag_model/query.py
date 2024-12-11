@@ -13,7 +13,15 @@ def query_doc(query):
     with open(text_file_path, "r", encoding="utf-8") as f:
         document_summary = f.read()
 
-    # doc_handler()    #-----------> uncomment and run the code for new docs
+
+
+
+
+    # doc_handler()    #-----------> uncomment and run the code once for new docs
+
+
+
+
 
 
     # query = input("Enter document related query: ")
@@ -24,11 +32,11 @@ def query_doc(query):
         return " Enter relevant query to the document provided."
     else:
         formatted_chunks=format_retrieved_chunks(retrieved_chunks)
-        print("##################################Retrieved Chunks:",formatted_chunks)
+        # print("##################################Retrieved Chunks:",formatted_chunks)
 
 
         # LLM for final structured result
-        prompt = f"Please summarize and provide a well-organized response based on the following chunks of text:\n\n{formatted_chunks}" 
+        prompt = f"Please summarize and provide a well-organized response based on the following text retrived without mentioning chunk:\n\n{formatted_chunks}" 
         # Send the formatted chunks to Gemini API
         response = gen_model.generate_content(prompt)
         # print (response)
