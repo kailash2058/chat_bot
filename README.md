@@ -28,7 +28,7 @@ venv\Scripts\activate (for windows)
 3.Install the required libraries:
 
 ```
-pip install requirnments.txt 
+pip install requirements.txt 
 ```
 4.  Set up environment variables: for storing thr gemini api key
 
